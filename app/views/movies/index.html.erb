@@ -1,6 +1,6 @@
 <h1>Voici nos films</h1>
 
 <p><% @movies.each do |movie| %>
-    <p><%= movie.title %>, réalisé par <%= movie.director %>, sorti en <%= movie.release_year %></p>
+    <p><%= movie.title %>, réalisé par <%= movie.director.first_name %> <%= movie.director.last_name %>, sorti en <%= movie.release_year %></p>
 <% end %>
 </p>
